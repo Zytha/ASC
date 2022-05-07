@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASC | Homepage</title>
+    </head>
+    <body>
+        <h1 class="title">アニメソングコレクション</h1>
+        <div class="flex-auto">
+            <div class="song-div">
+                <h3>不可思議のカゥテ</h3>
+                <audio controls src="./assets/不可思議のカゥテ.mp3" type="audio/mpeg" title="不可思議のカゥテ"></audio>
+            </div>
+            <div class="song-div">
+                <h3>光るなら</h3>
+                <audio controls src="./assets/光るなら.mp3" type="audio/mpeg" title="光るなら"></audio>
+            </div>
+            <div class="song-div">
+                <h3>恋のうた</h3>
+                <audio controls src="./assets/恋のうた.mp3" type="audio/mpeg" title="恋のうた"></audio>
+            </div>
+            <div class="song-div">
+                <h3>紅蓮華</h3>
+                <audio controls src="./assets/紅蓮華.mp3" type="audio/mpeg" title="紅蓮華"></audio>
+            </div>            
+        </div>
+    </body>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        body {
+            background-color: #242424;
+            color: white;
+        }
+
+        .title {
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 2.5rem;
+        }
+
+        .song-div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            background-color: #fafafa;
+            color: #242424;
+            padding: 1rem;
+            border-radius: 16px;
+            gap: 0.5rem;
+        }
+
+        .flex-auto {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 1rem;
+        }
+
+        @media (min-width: 1024px) { 
+            .flex-auto {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                gap: 1rem;
+            }   
+        }
+    </style>
+</html>
